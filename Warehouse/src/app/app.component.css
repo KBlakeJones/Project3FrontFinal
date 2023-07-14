@@ -1,0 +1,36 @@
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:  #333;
+    color: white;
+    padding: 1em;
+  }
+    
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+    
+    .logo img {
+      width: 100px; 
+      height: auto;
+      margin-right: 1em;
+    }
+    
+    .navigation {
+      flex-grow: 1;
+    }
+    
+    .text-end {
+      display: flex;
+      align-items: center;
+    }
+    
+    .pretty-btn{
+      background-color: #ede7b1;
+    }
+    .main-text{
+      font-family:'myfont';
+     }
+    

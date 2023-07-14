@@ -1,0 +1,210 @@
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+.title{
+  font-family:'myfont';
+  font-size:3.5em;
+  font-weight: bolder;
+  color:#a9def9;
+  text-shadow: -1px 1px 0 #000,
+        1px 1px 0 #000,
+       1px -1px 0 #000,
+      -1px -1px 0 #000;
+  
+}
+
+
+.text-end {
+  display: flex;
+  align-items: center;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2em;
+}
+
+.product {
+  display: inline-block;
+  vertical-align: top;
+  width: 30%;
+  padding: 1em;
+  margin-bottom: 2em;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1em;
+}
+
+
+.product p {
+  margin-bottom: 1em;
+}
+
+.btn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #ede7b1;
+  color: black;
+  padding: 1em;
+  text-align: center;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+
+  
+}
+
+.search input[type="text"] {
+  padding: 0.5em;
+  border: none;
+  border-radius: 4px;
+  margin-right: 0.5em;
+}
+
+.search button {
+  padding: 0.5em 1em;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.text-end {
+  display: flex;
+  align-items: center;
+}
+
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {height: 450px}
+
+/* Set gray background color and 100% height */
+.sidenav {
+  padding-top: 20px;
+  background-color: #f1f1f1;
+  height: 100%;
+}
+
+/* Set black background color, white text and some padding */
+footer {
+  background-color: #555;
+  color: white;
+  padding: 15px;
+  border-radius: 25px;
+}
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+  .sidenav {
+    height: auto;
+    padding: 15px;
+  }
+}
+  .row.content {height:auto;} 
+
+ header {
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+padding: 10px;
+}
+
+.logo img {
+height: 200px; 
+}
+
+.search {
+display: flex;
+align-items: center;
+}
+
+.search input[type="text"] {
+padding: 5px;
+border-radius: 3px;
+border: none;
+}
+
+.search button {
+margin-left: 10px; 
+}
+
+  
+  .search-form {
+    display: flex;
+    align-items: center;
+  }
+  .search-form input[type="text"] {
+    padding: 5px;
+    border-radius: 3px;
+    border: none;
+  }
+  
+  .search-form button[type="submit"] {
+    padding: 5px 10px;
+    border-radius: 3px;
+    border: none;
+    background-color: #007bff;
+  }
+
+      /* CSS styles for the sections */
+      .section {
+        /* border: 1px solid #ccc; */
+        padding: 20px;
+        margin-bottom: 20px;
+        background-color:#ffd1e4 ;
+        border-radius: 25px;
+      }
+      
+      .section-title {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      
+      .section-content {
+        font-size: 16px;
+
+      }
+      
+      .warehouse-image {
+        /* max-width: 300px; */
+        height: 300px;
+        /* margin-bottom: 10px; */
+      }
+      .logo-border{
+        border-radius: 100px;
+      }
+      .main-text{
+        font-family:'myfont';
+       }

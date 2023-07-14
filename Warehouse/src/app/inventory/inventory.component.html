@@ -1,0 +1,107 @@
+
+<div class="main-text">
+<div>
+  <div class="container-fluid">
+    <div class="row flew-xl-nowrap">
+      <aside class="col-12 col-md-3 col-xl-2 bd-sidebar sidebar-color">
+        <a routerLink="/additem" class="btn add-inv btn-lg d-grid gap-2 mt-3 mb-3 border-dark"> Add Inventory</a>
+          <form>
+              <h2 class="title2" style="font-weight: bold;">Candies</h2>
+
+              <div *ngFor="let type of typeList">
+                <input type="checkbox" name="type.description" id="type.description" value="type.type_id" (change)="filter(type)">
+                <label for="type.description">{{type.description}}</label>
+              </div>
+
+          <h2 style="font-weight: bold;">Warehouse Location</h2>
+          <div>
+              <input id="warehouse1" name="location" type="radio" value="warehouse1" />
+              <label for="warehouse1">Indianapolis</label>
+          </div>
+          <div>
+              <input id="warehouse2" name="location" type="radio" value="warehouse2" />
+              <label for="warehouse2">Nashville</label>
+          </div>
+          <div>
+              <input id="warehouse3" name="location" type="radio" value="warehouse3" />
+              <label for="warehouse3">Oklahoma City</label>
+          </div>
+
+              <button class="btn pretty-btn btn-outline-dark me-1 mt-2 mb-4" type="reset">RESET</button>
+              <!-- <button class="btn btn-primary btn-outline-dark mt-2" type="submit">SUBMIT</button> -->
+          </form>
+          <!-- <a routerLink="/additem" class="btn btn-warning btn-lg mt-3"> Add Inventory</a> -->
+      </aside>
+      <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content main-color">
+
+       
+
+      <h1 class="title text-center">Available Inventory</h1>
+     <!-- <a routerLink="/additem" class="btn btn-warning btn-lg btn-block"> Add Inventory</a> -->
+     
+ 
+     <nav class="navbar" style="justify-content: center;">
+      <form class="form-inline text-center w-50 " style="justify-content: center;">
+    <input class=" form-control " style="width: 500px; justify-content: center;" type="search" style="height: 37px" placeholder="Search by candy name, type, or ID" aria-label="Search by candy name, type, or ID">
+    <button class="btn pretty-btn border-dark mt-1" style="width: 250px;" type="submit">Search</button>
+      </form></nav>
+      <!-- <div class="text-center">
+        <input class="w-50 pb-1 mb-3" type="search" style="height: 37px">
+        <button class="btn btn-primary ms-2" type="submit">Search</button>
+      </div> -->
+
+      <div>
+        <!-- <div class="row row-cols-2 row-cols-md-3 mb-3 text-center"> -->
+
+          <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+            <div class="col" *ngFor="let item of itemList">
+              <div class="card mb-4 rounded-3 shadow-sm border-primary">
+
+
+                  <div class="card-header py-3 text-bg-primary pretty-border">
+                    <h4 class="my-0 fw-normal">{{item.itemName}}</h4>
+                  </div>
+                  <div class="card-body">
+                    <h1 class="card-title pricing-card-title align-text-top">{{item.quantity}}<small class="text-body-secondary fw-light fs-5 badge badge-primary text-wrap align-text-top" style="width: 7rem;"> Pc(s) Available</small></h1>
+                    <ul class="list-unstyled mb-2">
+                      <li>Currently in stock</li>
+                      <li>Type: {{item.type.typeId}}</li>
+                      <li>Popularity: {{item.popularity}}</li>
+                      <li>Warehouse Location: {{item.warehouse}}</li>
+                      <li>Item ID: {{item.itemId}}</li>
+                    </ul>
+                    <div>
+                    <!-- <button type="button" class="w-50 btn btn-md btn-primary border-dark">Update Item -->
+                      <a routerLink="/update" class=" btn btn-md pretty-btn3 border-dark" style="width: 8em; margin-right:2px;"> Update</a>
+                    <!-- </button> -->
+                      
+                    <a [routerLink]="['/delete', item.itemId]" class=" btn btn-md pretty-btn3 border-dark" style="width: 8em;">Delete Item</a>
+                    <!-- <button type="button" class=" btn btn-md btn-primary border-dark" style="width: 8em;">Delete Item</button> -->
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          
+        </div>
+      </div>
+      </main>
+    </div>
+    <!-- <router-outlet></router-outlet> -->
+  </div>
+
+  <footer class="text-center">
+  <div class="pagination active">
+    <a href="#">&laquo;</a>
+    <a href="#">1</a>
+    <a href="#">2</a>
+    <a href="#">3</a>
+    <a href="#">4</a>
+    <a href="#">5</a>
+    <a href="#">6</a>
+    <a href="#">&raquo;</a>
+  </div>
+</footer>
+
+</div>
+</div>

@@ -1,0 +1,35 @@
+.title{
+    font-size:3.5em;
+    font-weight: bolder;
+    color:#a9def9;
+    text-shadow: -1px 1px 0 #000,
+				  1px 1px 0 #000,
+				 1px -1px 0 #000,
+				-1px -1px 0 #000;
+    
+  }
+  .body{
+    font-size: 1.5em;
+
+  }
+  .section {
+    /* border: 1px solid #ccc; */
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color:#ffd1e4 ;
+    border-radius: 25px;
+  }
+  .title{
+    font-family:'myfont';
+    font-size:3.5em;
+    font-weight: bolder;
+    color:#a9def9;
+    text-shadow: -1px 1px 0 #000,
+          1px 1px 0 #000,
+         1px -1px 0 #000,
+        -1px -1px 0 #000;
+    
+  }
+  .main-text{
+    font-family:'myfont';
+   }

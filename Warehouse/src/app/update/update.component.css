@@ -1,0 +1,33 @@
+.formColor{
+    color:black;
+    background-color:#ede7b1;
+}
+.button{
+    margin: 5px;
+}
+.table-nonfluid {
+    width:700px;
+    display:inline-block;
+    
+ }
+ .title{
+  font-family:'myfont';
+  font-size:3.5em;
+  font-weight: bolder;
+  color:#a9def9;
+  text-shadow: -1px 1px 0 #000,
+        1px 1px 0 #000,
+       1px -1px 0 #000,
+      -1px -1px 0 #000;
+  
+}
+  .pretty-btn{
+    background-color: #F694c1;
+  }
+  .tables{
+    background-color:#a9def9;
+    /* justify-content: space-around; */
+  }
+  .main-text{
+    font-family:'myfont';
+   }

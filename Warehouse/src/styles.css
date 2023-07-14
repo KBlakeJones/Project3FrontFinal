@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+
+html, body {
+    background-color:rgb(211, 248, 226);
+}
+.checkbox{
+    text-align: left;
+}
+@font-face{
+    font-family: Caprasimo;
+    src: url('/src/app/assets/Caprasimo-Regular.ttf');
+  }
